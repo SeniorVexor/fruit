@@ -1,0 +1,23 @@
+{
+  "angor": {
+    "name": "انگور",
+    "desc": "اسکریپت اصلی پردازش داده ها",
+    "icon": "Grape",
+    "url": "/angor",
+    "state": true
+  },
+  "mission": {
+    "name": "ماموریت",
+    "desc": "اسکریپت اصلی پردازش داده ها",
+    "icon": "Swords",
+    "url": "/mission",
+    "state": false
+  },
+  "tribe": {
+    "name": "قبیله",
+    "desc": "قبیله خود را مدیریت کنید.",
+    "icon": "ChessRook",
+    "url": "/tribe",
+    "state": true
+  }
+}

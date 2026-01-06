@@ -1,65 +1,97 @@
-import Image from "next/image";
+'use client';
 
-export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+import { useRouter } from 'next/navigation';
+import { Icon } from '@iconify/react';
+import { useState } from 'react';
+
+import Link from "next/link";
+
+export default function HomePage() {
+    const router = useRouter();
+    const [token, setToken] = useState('');
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        const trimmedToken = token.trim();
+        if (trimmedToken) {
+            router.push(`/auth/token/${encodeURIComponent(trimmedToken)}/scripts`);
+        }
+
+    };
+
+    return (
+        <div className="flex min-h-[100dvh] items-center justify-center bg-base-200 px-4">
+            <div className="w-full max-w-md">
+                <Icon icon="lucide:bot" className="w-20 h-20 mx-auto mb-4 text-primary sm:w-24 sm:h-24"  />
+
+                <h1 className="text-3xl sm:text-5xl font-bold text-center mb-6">
+                    Ex Panel
+                </h1>
+
+                <form onSubmit={handleSubmit}>
+                    <fieldset className="overflow-hidden fieldset bg-base-200 border-base-300 rounded-box border p-4 m-0">
+                        <legend className="fieldset-legend text-lg sm:text-xl">
+                            ورود به پنل با توکن
+                        </legend>
+
+                        <input
+                            name='EX-Token'
+                            type="text"
+                            className="input w-full"
+                            placeholder="****-****-****"
+                            value={token}
+                            onChange={(e) => setToken(e.target.value)}
+                            required
+                        />
+
+                        <p className="label text-xs sm:text-sm m-0">
+                            برای امنیت حساب خود لطفاً توکن را در اختیار کسی نگذارید
+                        </p>
+
+                        <p className="label text-xs sm:text-sm m-0">
+                            اگر توکن را ندارید ربات را /start کنید و اشتراک بگیرید
+                        </p>
+
+                        <button type="submit" className="btn btn-neutral mt-4 w-full">
+                            Login
+                        </button>
+                    </fieldset>
+                </form>
+                <div className="mt-6">
+                    <div className="divider text-xs">یا ورود با</div>
+
+                    <div className="grid gap-3">
+                        <Link
+                            href="#"
+                            className="group flex items-center justify-center gap-3 rounded-box border border-base-300 bg-base-200 px-4 py-3 text-sm font-medium transition hover:bg-base-300"
+                        >
+                            <Icon icon="tabler:brand-google" className="h-5 w-5" />
+                            ورود با Google
+                        </Link>
+
+                        <Link
+                            href="#"
+                            className="group flex items-center justify-center gap-3 rounded-box border border-base-300 bg-base-200 px-4 py-3 text-sm font-medium transition hover:bg-base-300"
+                        >
+                            <Icon icon="tabler:brand-x" className="h-4 w-4 text-current" />
+                            ورود با X
+                        </Link>
+
+                        {/*<Link*/}
+                        {/*    href="#"*/}
+                        {/*    className="group flex items-center justify-center gap-3 rounded-box border border-base-300 bg-base-200 px-4 py-3 text-sm font-medium transition hover:bg-base-300"*/}
+                        {/*>*/}
+                        {/*    <Icon icon="logos:telegram" className="h-5 w-5" />*/}
+                        {/*    ورود با Telegram*/}
+                        {/*</Link>*/}
+
+
+
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+    );
 }
