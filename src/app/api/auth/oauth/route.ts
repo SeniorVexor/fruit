@@ -24,7 +24,7 @@ export async function POST(request: Request) {
 
         // کاربر
         let dbUser = await prisma.users.findUnique({
-            where: { tgId: userId }  // یا هر فیلدی که مناسب هست
+            where: { email }
         });
 
         if (!dbUser) {
