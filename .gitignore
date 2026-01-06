@@ -35,7 +35,7 @@ yarn-error.log*
 next-env.d.ts
 
 # token storage
-config/auth/token/
+#config/auth/token/
 
 # scripts output
 scripts/logs/
