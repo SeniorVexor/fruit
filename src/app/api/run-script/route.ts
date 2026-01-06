@@ -1,36 +1,45 @@
-import { NextResponse } from 'next/server';
-import { runScriptSSE } from '@/lib/scriptExecutor';
+import { NextRequest } from 'next/server';
+import { Readable } from 'stream';
+import { runScriptSSE, PROCESSES } from '@/lib/scriptExecutor';
 
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
         const { scriptName, payload } = body;
 
-        if (!scriptName) {
-            return NextResponse.json({ error: 'scriptName required' }, { status: 400 });
+        if (!scriptName || typeof scriptName !== 'string') {
+            return new Response('Invalid scriptName', { status: 400 });
         }
 
-        // چک وجود فایل
-        const fs = require('fs');
-        const scriptPath = `./scripts/${scriptName}.py`;
-        if (!fs.existsSync(scriptPath)) {
-            return NextResponse.json({ error: `Script not found: ${scriptName}.py` }, { status: 404 });
+        if (!payload || typeof payload !== 'object') {
+            return new Response('Invalid payload', { status: 400 });
         }
 
-        const stream = runScriptSSE(scriptName, payload ?? {});
+        // Kill existing process if running
+        if (PROCESSES.has(scriptName)) {
+            console.log(`Killing existing process for ${scriptName}`);
+            const existing = PROCESSES.get(scriptName);
+            existing?.process.kill('SIGTERM');
+            PROCESSES.delete(scriptName);
+        }
 
-        // ✅ ارسال به صورت raw text stream
-        return new Response(stream, {
+        // ✅ Convert Node.js stream to web stream
+        const nodeStream = runScriptSSE(scriptName, payload);
+        const webStream = Readable.toWeb(nodeStream);
+
+        return new Response(webStream as ReadableStream, {
             headers: {
                 'Content-Type': 'text/plain; charset=utf-8',
-                'Cache-Control': 'no-cache',
-                'Connection': 'keep-alive',
-                'Transfer-Encoding': 'chunked', // ✅ مهم برای stream
+                'Cache-Control': 'no-cache, no-store, must-revalidate',
+                'Pragma': 'no-cache',
+                'X-Accel-Buffering': 'no',
             },
         });
-
     } catch (error) {
-        console.error('Run script error:', error);
-        return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
+        console.error('API Error:', error);
+        return new Response(JSON.stringify({ error: 'Internal server error' }), {
+            status: 500,
+            headers: { 'Content-Type': 'application/json' }
+        });
     }
 }

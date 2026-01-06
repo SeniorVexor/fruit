@@ -25,6 +25,7 @@
     "typescript": "^5.9.3"
   },
   "devDependencies": {
+    "@types/cacheable-request": "^8.3.6",
     "@types/node": "^20.12.7",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",

@@ -183,7 +183,7 @@ export default function TribePage() {
             if (!response.ok) throw new Error('Network error');
 
             const reader = response.body?.getReader();
-            print(reader)
+            // console.log(reader)
             const decoder = new TextDecoder();
             let buffer = '';
 
