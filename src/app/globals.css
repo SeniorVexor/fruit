@@ -28,9 +28,5 @@ body {
 }
 
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-y: hidden;
-    @apply items-center justify-center min-h-screen
+    user-select: none;
 }

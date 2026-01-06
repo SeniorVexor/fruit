@@ -16,9 +16,9 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="fa" dir="rtl">
-        <body className={vazir.className}>
-        <main className="min-h-screen w-full bg-base-100 items-center justify-center">
+        <html lang="fa">
+        <body className={vazir.className} dir={'rtl'}>
+        <main className="min-h-screen rtl w-full flex bg-base-200 items-center justify-center">
             {children}
         </main>
         </body>

@@ -1,7 +1,8 @@
 'use client';
 
 import {useState} from 'react';
-import {Key, Play, Zap, MinusCircle} from 'lucide-react';
+import {Key, Play, Zap, MinusCircle, ArrowRight} from 'lucide-react';
+import router from "next/router";
 
 interface Props {
     onConfirm: (payload: {
@@ -29,11 +30,12 @@ export default function TwoStepForm({onConfirm}: Props) {
     };
 
     return (
-        <fieldset className="mx-auto card bg-base-200 shadow-xl p-6 gap-4 max-w-md">
+        <fieldset className="flex card bg-base-200 shadow-xl p-6 gap-4 ">
+
             <legend
                 className="fieldset-legend bg-base-200 border-2 border-base-100 p-2 rounded-box text-lg font-bold flex items-center gap-2">
                 <Key className="w-5 h-5"/>
-                تنظیمات اسکریپت
+                اسکریپت انگور
             </legend>
 
             {/* ۱) Restore Key */}
@@ -65,6 +67,7 @@ export default function TwoStepForm({onConfirm}: Props) {
                     <span className="label-text flex items-center gap-2">
                         <Zap className="w-4 h-4"/>
                         تعداد حملات به هر نفر
+                        ( {attacks} )
                     </span>
                 </label>
 
@@ -72,22 +75,13 @@ export default function TwoStepForm({onConfirm}: Props) {
                     type="range"
                     required
                     min="1"
-                    max="10"
+                    max="50"
                     value={attacks}
                     onChange={(e) => setAttacks(e.target.value)}
                     className="range w-full text-primary/50"
                 />
                 <div className="flex justify-between px-2.5 my-2 text-xs ">
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <span>4</span>
-                    <span>5</span>
-                    <span>6</span>
-                    <span>7</span>
-                    <span>8</span>
-                    <span>9</span>
-                    <span>10</span>
+                    <span>1</span><span>5</span><span>10</span><span>15</span><span>20</span><span>25</span><span>30</span><span>35</span><span>40</span><span>45</span><span>50</span>
                 </div>
                 {!isPosInt(attacks) && (
                     <label className="label">

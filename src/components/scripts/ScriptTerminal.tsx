@@ -42,9 +42,9 @@ export function ScriptTerminal({ output, onClear, onClose, onRestart, running }:
     return (
         <div className="card bg-base-100 shadow-xl border border-base-300">
             <div className="card-body p-0">
-                <div className="flex justify-center items-center p-4 bg-base-200 rounded-t-box border-b border-base-300">
+                <div className="flex justify-between items-center p-4 bg-base-200 rounded-t-box border-b border-base-300">
                     <h3 className="font-bold flex items-center gap-2">
-                        ترمینال اجرا {running && '(در حال اجرا...)'}
+                        ترمینال اجرا {running && ''}
                     </h3>
 
                     <div className="flex gap-2">

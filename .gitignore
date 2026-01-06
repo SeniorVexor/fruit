@@ -36,7 +36,7 @@ next-env.d.ts
 
 # token storage
 #config/auth/token/
-#src/tests
+src/tests
 
 # scripts output
 scripts/logs/

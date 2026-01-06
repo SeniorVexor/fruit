@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import {Rocket, Grape, Swords, Play ,ChessRook} from 'lucide-react';
 import scriptsConfig from '@/../config/scripts.json';
+import React from "react";
 
 // برای هر آیکنی که در JSON اضافه می‌کنید، اینجا import و mapping اضافه کنید
 const iconComponents: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -32,8 +33,8 @@ export default function TokenAuthPage() {
     }
 
     return (
-        <div className="min-h-screen w-full bg-base-200 flex items-center justify-center p-4">
-            <div className="card bg-base-100 shadow-xl max-w-2xl w-full">
+        <div className="w-full bg-base-200 p-4">
+            <div className="card bg-base-100 shadow-xl max-w-md w-full">
                 <div className="card-body">
                     <h1 className="card-title text-2xl justify-center mb-6">
                         <Rocket className="w-6 h-6" /> خوش آمدید!
@@ -47,7 +48,7 @@ export default function TokenAuthPage() {
 
                     <div className="divider">انتخاب اسکریپت</div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
                         {Object.entries(typedScriptsConfig).map(([key, script]) => {
                             if (!script.state) return null; // فقط اسکریپت‌های فعال
 

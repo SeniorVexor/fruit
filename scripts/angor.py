@@ -1,4 +1,4 @@
-import time, random
+import time, random,sys
 from fruitbot import Client
 from fruitbot.network import Socket
 
@@ -34,12 +34,10 @@ from fruitbot.crypto import Encryption
 enc = Encryption(version=2)
 import sqlite3
 from time import sleep
-import sys
 import random
-from colorama import Fore as color
+from colorama import init,Fore as color
 import requests
 import base64
-import json
 import string
 import os
 import hashlib
@@ -59,7 +57,7 @@ with contextlib.redirect_stdout(_silence), contextlib.redirect_stderr(_silence):
     from fruitbot.network import Socket
 
 fruit_socket = Socket()
-
+init(strip=not sys.stdout.isatty())
 
 import argparse, json, sys
 

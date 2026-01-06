@@ -6,6 +6,9 @@ import TwoStepForm from '@/components/scripts/TwoStepForm';
 import { ScriptTerminal } from '@/components/scripts/ScriptTerminal';
 import { runScript, killScript } from '@/lib/api';
 import { flushSync } from 'react-dom';
+import router from "next/router";
+import {ArrowRight} from "lucide-react";
+import Link from "next/link";
 
 export default function AngorPage() {
 
@@ -97,8 +100,17 @@ export default function AngorPage() {
     }
 
     return (
-        <div className="mx-auto p-4 flex items-center justify-center">
+        <div className="mx-auto p-4 flex items-center justify-center flex-col gap-2">
             <TwoStepForm onConfirm={handleStart}/>
+            <Link
+                type="button"
+                href="."
+                // onClick={() => router.push('/..')}
+                className="w-full btn btn-ghost items-center justify-center gap-3 rounded-box border-2 border-base-100 bg-base-200 px-4 py-3 text-sm font-medium"
+            >
+                <ArrowRight className="w-4 h-4 rotate-180" />
+                بازگشت
+            </Link>
         </div>
     );
 }

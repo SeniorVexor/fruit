@@ -12,7 +12,7 @@ export async function proxy(request: NextRequest) {
     const match = pathname.match(/^\/auth\/token\/([^/]+)/);
 
     if (!match) {
-        return NextResponse.redirect(new URL('/auth/error/invalid', request.url));
+        return NextResponse.redirect(new URL('/auth/error/invalid-token', request.url));
     }
 
     const token = match[1];
@@ -42,6 +42,6 @@ export async function proxy(request: NextRequest) {
 
     } catch (error) {
         console.error('Proxy Token Verification Error:', error);
-        return NextResponse.redirect(new URL('/auth/error/invalid', request.url));
+        return NextResponse.redirect(new URL('/auth/error/invalid-token', request.url));
     }
 }

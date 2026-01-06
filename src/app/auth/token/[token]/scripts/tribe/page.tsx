@@ -6,6 +6,7 @@ import {
     Users, Trophy, Play, X, Loader2
 } from 'lucide-react';
 import { formatCompactNumber } from "@/lib/utils";
+import Link from "next/link";
 
 // --- انواع داده ---
 interface Tribe {
@@ -311,8 +312,8 @@ export default function TribePage() {
     // --- UI Components ---
 
     return (
-        <div className="min-h-screen bg-base-200 p-4 font-sans">
-            <div className="max-w-4xl mx-auto">
+        <div className="items-center justify-center  p-4 font-sans w-full">
+            <div className="mx-auto">
 
                 {/* STEP 1: Input Key */}
                 {step === 1 && (
@@ -464,6 +465,15 @@ export default function TribePage() {
                 status={joinStatus}
                 tribeName={selectedTribeName}
             />
+            <Link
+                type="button"
+                href="."
+                // onClick={() => router.push('/..')}
+                className="w-full btn btn-ghost items-center justify-center gap-3 rounded-box border-2 border-base-100 bg-base-200 px-4 py-3 my-3 text-sm font-medium"
+            >
+                <ArrowRight className="w-4 h-4 rotate-180" />
+                بازگشت
+            </Link>
         </div>
     );
 }

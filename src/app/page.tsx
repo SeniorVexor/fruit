@@ -21,8 +21,8 @@ export default function HomePage() {
     };
 
     return (
-        <div className="flex min-h-[100dvh] items-center justify-center bg-base-200 px-4">
-            <div className="w-full max-w-md">
+        <div className="flex min-h-[100dvh] items-center justify-center px-4">
+            <div className="w-full">
                 <Icon icon="lucide:bot" className="w-20 h-20 mx-auto mb-4 text-primary sm:w-24 sm:h-24"  />
 
                 <h1 className="text-3xl sm:text-5xl font-bold text-center mb-6">
