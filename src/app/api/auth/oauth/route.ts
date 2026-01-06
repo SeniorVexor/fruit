@@ -23,7 +23,7 @@ export async function POST(request: Request) {
         const email = user.email!;
 
         // کاربر
-        let dbUser = await prisma.telegramUser.findUnique({
+        let dbUser = await prisma.users.findUnique({
             where: { tgId: userId }  // یا هر فیلدی که مناسب هست
         });
 

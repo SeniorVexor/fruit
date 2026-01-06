@@ -8,6 +8,11 @@ datasource db {
   directUrl = env("DIRECT_URL")
 }
 
+model users {
+  id    Int    @id @default(autoincrement())
+  email String @unique
+}
+
 model telegramUser {
   id        Int      @id @unique
   tgId      Int      @unique
