@@ -1,0 +1,513 @@
+  [
+  {
+    "id": 714189899,
+    "last_used_at": 1775902931,
+    "power": 17,
+    "base_card_id": 128,
+    "player_id": 8599363
+  },
+  {
+    "id": 737430564,
+    "last_used_at": 0,
+    "power": 24730,
+    "base_card_id": 134,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189822,
+    "last_used_at": 1775902925,
+    "power": 17,
+    "base_card_id": 135,
+    "player_id": 8599363
+  },
+  {
+    "id": 714204544,
+    "last_used_at": 1775902927,
+    "power": 17,
+    "base_card_id": 135,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189854,
+    "last_used_at": 1775902928,
+    "power": 17,
+    "base_card_id": 135,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189853,
+    "last_used_at": 1775902919,
+    "power": 20,
+    "base_card_id": 142,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189900,
+    "last_used_at": 1775902920,
+    "power": 20,
+    "base_card_id": 142,
+    "player_id": 8599363
+  },
+  {
+    "id": 714207177,
+    "last_used_at": 1775902922,
+    "power": 20,
+    "base_card_id": 142,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189852,
+    "last_used_at": 1775902916,
+    "power": 24,
+    "base_card_id": 149,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189906,
+    "last_used_at": 1775902914,
+    "power": 24,
+    "base_card_id": 149,
+    "player_id": 8599363
+  },
+  {
+    "id": 714206578,
+    "last_used_at": 1775902909,
+    "power": 24,
+    "base_card_id": 149,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189828,
+    "last_used_at": 1775902912,
+    "power": 24,
+    "base_card_id": 149,
+    "player_id": 8599363
+  },
+  {
+    "id": 737980122,
+    "last_used_at": 0,
+    "power": 28019,
+    "base_card_id": 155,
+    "player_id": 8599363
+  },
+  {
+    "id": 737560562,
+    "last_used_at": 0,
+    "power": 28019,
+    "base_card_id": 155,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189814,
+    "last_used_at": 1775902906,
+    "power": 18,
+    "base_card_id": 156,
+    "player_id": 8599363
+  },
+  {
+    "id": 651927551,
+    "last_used_at": 1775902907,
+    "power": 18,
+    "base_card_id": 156,
+    "player_id": 8599363
+  },
+  {
+    "id": 737809505,
+    "last_used_at": 0,
+    "power": 23051,
+    "base_card_id": 162,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189895,
+    "last_used_at": 1775902903,
+    "power": 17,
+    "base_card_id": 163,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189827,
+    "last_used_at": 1775902898,
+    "power": 17,
+    "base_card_id": 163,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189908,
+    "last_used_at": 1775902896,
+    "power": 18,
+    "base_card_id": 170,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189818,
+    "last_used_at": 1775902890,
+    "power": 18,
+    "base_card_id": 170,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189866,
+    "last_used_at": 1775902892,
+    "power": 18,
+    "base_card_id": 170,
+    "player_id": 8599363
+  },
+  {
+    "id": 737920726,
+    "last_used_at": 0,
+    "power": 26296,
+    "base_card_id": 176,
+    "player_id": 8599363
+  },
+  {
+    "id": 714203796,
+    "last_used_at": 1775902887,
+    "power": 15,
+    "base_card_id": 177,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189898,
+    "last_used_at": 1775902885,
+    "power": 15,
+    "base_card_id": 177,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189865,
+    "last_used_at": 1775902883,
+    "power": 15,
+    "base_card_id": 177,
+    "player_id": 8599363
+  },
+  {
+    "id": 737243762,
+    "last_used_at": 0,
+    "power": 24366,
+    "base_card_id": 183,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189869,
+    "last_used_at": 1775902879,
+    "power": 27,
+    "base_card_id": 184,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189819,
+    "last_used_at": 1775902876,
+    "power": 27,
+    "base_card_id": 184,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189909,
+    "last_used_at": 1775902881,
+    "power": 27,
+    "base_card_id": 184,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189892,
+    "last_used_at": 1775902874,
+    "power": 23,
+    "base_card_id": 191,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189863,
+    "last_used_at": 1775902872,
+    "power": 23,
+    "base_card_id": 191,
+    "player_id": 8599363
+  },
+  {
+    "id": 651927837,
+    "last_used_at": 1775902865,
+    "power": 16,
+    "base_card_id": 198,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189817,
+    "last_used_at": 1775902870,
+    "power": 16,
+    "base_card_id": 198,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189857,
+    "last_used_at": 1775902868,
+    "power": 16,
+    "base_card_id": 198,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189829,
+    "last_used_at": 1775902861,
+    "power": 19,
+    "base_card_id": 205,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189894,
+    "last_used_at": 1775902859,
+    "power": 19,
+    "base_card_id": 205,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189871,
+    "last_used_at": 1775902864,
+    "power": 19,
+    "base_card_id": 205,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189858,
+    "last_used_at": 1775902855,
+    "power": 18,
+    "base_card_id": 212,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189834,
+    "last_used_at": 1775902856,
+    "power": 18,
+    "base_card_id": 212,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189893,
+    "last_used_at": 1775902852,
+    "power": 15,
+    "base_card_id": 219,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189859,
+    "last_used_at": 1775902850,
+    "power": 15,
+    "base_card_id": 219,
+    "player_id": 8599363
+  },
+  {
+    "id": 714205881,
+    "last_used_at": 1775903009,
+    "power": 21,
+    "base_card_id": 226,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189870,
+    "last_used_at": 1775902848,
+    "power": 21,
+    "base_card_id": 226,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189907,
+    "last_used_at": 1775903012,
+    "power": 21,
+    "base_card_id": 226,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189896,
+    "last_used_at": 1775903006,
+    "power": 19,
+    "base_card_id": 233,
+    "player_id": 8599363
+  },
+  {
+    "id": 737609818,
+    "last_used_at": 0,
+    "power": 25567,
+    "base_card_id": 239,
+    "player_id": 8599363
+  },
+  {
+    "id": 737838352,
+    "last_used_at": 0,
+    "power": 25567,
+    "base_card_id": 239,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189816,
+    "last_used_at": 1775902999,
+    "power": 19,
+    "base_card_id": 240,
+    "player_id": 8599363
+  },
+  {
+    "id": 714204053,
+    "last_used_at": 1775903003,
+    "power": 19,
+    "base_card_id": 240,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189905,
+    "last_used_at": 1775903001,
+    "power": 19,
+    "base_card_id": 240,
+    "player_id": 8599363
+  },
+  {
+    "id": 714203210,
+    "last_used_at": 1775902996,
+    "power": 24,
+    "base_card_id": 247,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189824,
+    "last_used_at": 1775902993,
+    "power": 24,
+    "base_card_id": 247,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189831,
+    "last_used_at": 1775902989,
+    "power": 23,
+    "base_card_id": 254,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189910,
+    "last_used_at": 1775902991,
+    "power": 23,
+    "base_card_id": 254,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189825,
+    "last_used_at": 1775902982,
+    "power": 18,
+    "base_card_id": 261,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189861,
+    "last_used_at": 1775902986,
+    "power": 18,
+    "base_card_id": 261,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189891,
+    "last_used_at": 1775902985,
+    "power": 18,
+    "base_card_id": 261,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189862,
+    "last_used_at": 1775902980,
+    "power": 21,
+    "base_card_id": 268,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189832,
+    "last_used_at": 1775902978,
+    "power": 23,
+    "base_card_id": 275,
+    "player_id": 8599363
+  },
+  {
+    "id": 651927931,
+    "last_used_at": 1775902976,
+    "power": 23,
+    "base_card_id": 275,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189903,
+    "last_used_at": 1775902969,
+    "power": 20,
+    "base_card_id": 282,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189821,
+    "last_used_at": 1775902972,
+    "power": 20,
+    "base_card_id": 282,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189856,
+    "last_used_at": 1775902967,
+    "power": 20,
+    "base_card_id": 282,
+    "player_id": 8599363
+  },
+  {
+    "id": 714205306,
+    "last_used_at": 1775902973,
+    "power": 20,
+    "base_card_id": 282,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189901,
+    "last_used_at": 1775902962,
+    "power": 21,
+    "base_card_id": 289,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189823,
+    "last_used_at": 1775902965,
+    "power": 21,
+    "base_card_id": 289,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189902,
+    "last_used_at": 1775902961,
+    "power": 21,
+    "base_card_id": 296,
+    "player_id": 8599363
+  },
+  {
+    "id": 714189860,
+    "last_used_at": 1775902958,
+    "power": 21,
+    "base_card_id": 303,
+    "player_id": 8599363
+  },
+  {
+    "id": 738112691,
+    "last_used_at": 0,
+    "power": 41927805,
+    "base_card_id": 341,
+    "player_id": 8599363
+  },
+  {
+    "id": 733911566,
+    "last_used_at": 1775918241,
+    "power": 169781847,
+    "base_card_id": 341,
+    "player_id": 8599363
+  },
+  {
+    "id": 738112690,
+    "last_used_at": 0,
+    "power": 41927805,
+    "base_card_id": 343,
+    "player_id": 8599363
+  },
+  {
+    "id": 734007600,
+    "last_used_at": 1775918241,
+    "power": 4768,
+    "base_card_id": 419,
+    "player_id": 8599363
+  }
+]

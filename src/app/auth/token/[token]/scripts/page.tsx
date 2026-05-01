@@ -2,15 +2,19 @@
 
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import {Rocket, Grape, Swords, Play ,ChessRook} from 'lucide-react';
+import { Pickaxe, Rocket, Grape, Swords, Play, ChessRook, Package, LineChart, Axe, Hammer, Drone } from 'lucide-react';
 import scriptsConfig from '@/../config/scripts.json';
 import React from "react";
 
-// برای هر آیکنی که در JSON اضافه می‌کنید، اینجا import و mapping اضافه کنید
 const iconComponents: Record<string, React.ComponentType<{ className?: string }>> = {
+    Pickaxe: Pickaxe,
     Grape: Grape,
     Swords: Swords,
-    ChessRook: ChessRook
+    ChessRook: ChessRook,
+    Package: Package,
+    Axe: Axe,
+    Hammer: Hammer,
+    Drone: Drone,
 };
 
 interface ScriptConfig {
@@ -27,13 +31,12 @@ export default function TokenAuthPage() {
     const params = useParams();
     const tokenFromUrl = params?.token as string;
 
-    // چک ساده توکن (که توسط proxy باید تضمین شده باشد)
     if (!tokenFromUrl) {
         throw new Error('Invalid access - token missing');
     }
 
     return (
-        <div className="w-full bg-base-200 p-4">
+        <div className="w-full bg-base-200 p-4 overflow-hidden overscroll-none">
             <div className="card bg-base-100 shadow-xl max-w-md w-full">
                 <div className="card-body">
                     <h1 className="card-title text-2xl justify-center mb-6">
@@ -50,15 +53,12 @@ export default function TokenAuthPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
                         {Object.entries(typedScriptsConfig).map(([key, script]) => {
-                            if (!script.state) return null; // فقط اسکریپت‌های فعال
+                            if (!script.state) return null;
 
                             const IconComponent = iconComponents[script.icon];
 
                             return (
-                                <div
-                                    key={key}
-                                    className="card bg-base-200"
-                                >
+                                <div key={key} className="card bg-base-200">
                                     <div className="card-body items-center text-center">
                                         <h3 className="card-title justify-center">
                                             {IconComponent && <IconComponent className="w-5 h-5 mr-1" />}

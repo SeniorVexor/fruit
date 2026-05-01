@@ -1,0 +1,50 @@
+
+{
+  "request": {
+    "action": "check",
+    "seller": "keep10286increase10",
+    "buyer": "edge7578warm92",
+    "mode": "base_id",
+    "target": "149"
+  },
+  "python_output": {
+    "success": true,
+    "params": {
+      "seller": "keep10286i...",
+      "buyer": "edge7578wa...",
+      "target": 149,
+      "count": null
+    },
+    "summary": {
+      "mode": "base_id",
+      "transfers": [],
+      "card": [
+        {
+          "id": 714189852,
+          "base_id": 149,
+          "power": 24
+        },
+        {
+          "id": 714189906,
+          "base_id": 149,
+          "power": 24
+        },
+        {
+          "id": 714206578,
+          "base_id": 149,
+          "power": 24
+        },
+        {
+          "id": 714189828,
+          "base_id": 149,
+          "power": 24
+        }
+      ]
+    },
+    "logs": []
+  },
+  "final_response": {
+    "success": true,
+    "data": {}
+  }
+}

@@ -1,23 +1,50 @@
 {
   "angor": {
     "name": "انگور",
-    "desc": "اسکریپت اصلی پردازش داده ها",
+    "desc": "بزن بزن ، تک به تک",
     "icon": "Grape",
     "url": "/angor",
-    "state": true
+    "state": false,
+    "available": false
   },
   "mission": {
     "name": "ماموریت",
-    "desc": "اسکریپت اصلی پردازش داده ها",
+    "desc": "انجام خودکار مأموریت‌ها",
     "icon": "Swords",
     "url": "/mission",
-    "state": false
+    "state": false,
+    "available": false
   },
   "tribe": {
     "name": "قبیله",
     "desc": "قبیله خود را مدیریت کنید.",
     "icon": "ChessRook",
     "url": "/tribe",
-    "state": false
+    "state": false,
+    "available": false
+  },
+  "cardTransfer": {
+    "name": "کارت به کارت",
+    "desc": "انتقال تک پیش کارت",
+    "icon": "Package",
+    "url": "/cardTransfer",
+    "state": true,
+    "available": false
+  },
+  "drone": {
+    "name": "ویژ ویژ",
+    "desc": "پهپادبازی",
+    "icon": "Drone",
+    "url": "/drone",
+    "state": false,
+    "available": false
+  },
+  "miner": {
+    "name": "کارگر معدن",
+    "desc": "مدیریت معدن و جمع‌آوری خودکار طلا",
+    "icon": "Pickaxe",
+    "url": "/miner",
+    "state": true,
+    "available": true
   }
 }

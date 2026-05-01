@@ -1,0 +1,72 @@
+{
+  "success": true,
+  "timestamp": "2026-04-13T12:37:44.482540",
+  "mode": "list_cards",
+  "logs": [
+    {
+      "timestamp": "2026-04-13T12:37:44.482561",
+      "level": "info",
+      "message": "Connecting to account 'seller'..."
+    },
+    {
+      "timestamp": "2026-04-13T12:37:45.628631",
+      "level": "info",
+      "message": "Account 'seller' connected. Gold: 32109622774"
+    }
+  ],
+  "data": {
+    "seller_gold": 32109622774,
+    "seller_level": 1922,
+    "total_cards": 292,
+    "cards_by_power": {
+      "2553806841": [
+        {
+          "card_id": 726464130,
+          "base_id": 841,
+          "power": 2553806841,
+          "name": "Unknown"
+        }
+      ],
+      "2239415516": [
+        {
+          "card_id": 726456198,
+          "base_id": 843,
+          "power": 2239415516,
+          "name": "Unknown"
+        }
+      ],
+      "89960493": [
+        {
+          "card_id": 726460714,
+          "base_id": 399,
+          "power": 89960493,
+          "name": "Unknown"
+        }
+      ],
+      "240000": [
+        {
+          "card_id": 739186249,
+          "base_id": 316,
+          "power": 240000,
+          "name": "Unknown"
+        }
+      ],
+      "25": [
+        {
+          "card_id": 739165742,
+          "base_id": 121,
+          "power": 25,
+          "name": "Unknown"
+        }
+      ],
+      "23": [
+        {
+          "card_id": 739165795,
+          "base_id": 275,
+          "power": 23,
+          "name": "Unknown"
+        }
+      ]
+    }
+  }
+}

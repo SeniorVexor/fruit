@@ -1,0 +1,773 @@
+[
+  {
+    "13208123": [
+      {
+        "card_id": 526705619,
+        "base_id": 331,
+        "power": 13208123,
+        "name": 331
+      }
+    ],
+    "8500000": [
+      {
+        "card_id": 529890237,
+        "base_id": 339,
+        "power": 8500000,
+        "name": 339
+      }
+    ],
+    "810000": [
+      {
+        "card_id": 737259984,
+        "base_id": 311,
+        "power": 810000,
+        "name": 311
+      }
+    ],
+    "262871": [
+      {
+        "card_id": 432627196,
+        "base_id": 724,
+        "power": 262871,
+        "name": 724
+      }
+    ],
+    "255000": [
+      {
+        "card_id": 737259852,
+        "base_id": 318,
+        "power": 255000,
+        "name": 318
+      },
+      {
+        "card_id": 737259922,
+        "base_id": 318,
+        "power": 255000,
+        "name": 318
+      },
+      {
+        "card_id": 737268243,
+        "base_id": 318,
+        "power": 255000,
+        "name": 318
+      },
+      {
+        "card_id": 737268264,
+        "base_id": 318,
+        "power": 255000,
+        "name": 318
+      },
+      {
+        "card_id": 737268234,
+        "base_id": 318,
+        "power": 255000,
+        "name": 318
+      },
+      {
+        "card_id": 737260042,
+        "base_id": 318,
+        "power": 255000,
+        "name": 318
+      },
+      {
+        "card_id": 737259970,
+        "base_id": 318,
+        "power": 255000,
+        "name": 318
+      },
+      {
+        "card_id": 737259993,
+        "base_id": 318,
+        "power": 255000,
+        "name": 318
+      }
+    ],
+    "250000": [
+      {
+        "card_id": 737260036,
+        "base_id": 310,
+        "power": 250000,
+        "name": 310
+      },
+      {
+        "card_id": 737268200,
+        "base_id": 310,
+        "power": 250000,
+        "name": 310
+      },
+      {
+        "card_id": 737268189,
+        "base_id": 310,
+        "power": 250000,
+        "name": 310
+      }
+    ],
+    "240000": [
+      {
+        "card_id": 737260083,
+        "base_id": 316,
+        "power": 240000,
+        "name": 316
+      },
+      {
+        "card_id": 737260103,
+        "base_id": 316,
+        "power": 240000,
+        "name": 316
+      },
+      {
+        "card_id": 737259966,
+        "base_id": 316,
+        "power": 240000,
+        "name": 316
+      },
+      {
+        "card_id": 737259954,
+        "base_id": 316,
+        "power": 240000,
+        "name": 316
+      }
+    ],
+    "235000": [
+      {
+        "card_id": 737260162,
+        "base_id": 312,
+        "power": 235000,
+        "name": 312
+      },
+      {
+        "card_id": 737259879,
+        "base_id": 312,
+        "power": 235000,
+        "name": 312
+      },
+      {
+        "card_id": 737259933,
+        "base_id": 312,
+        "power": 235000,
+        "name": 312
+      },
+      {
+        "card_id": 737259942,
+        "base_id": 312,
+        "power": 235000,
+        "name": 312
+      },
+      {
+        "card_id": 737260055,
+        "base_id": 312,
+        "power": 235000,
+        "name": 312
+      },
+      {
+        "card_id": 737260072,
+        "base_id": 312,
+        "power": 235000,
+        "name": 312
+      }
+    ],
+    "230000": [
+      {
+        "card_id": 737260110,
+        "base_id": 314,
+        "power": 230000,
+        "name": 314
+      },
+      {
+        "card_id": 737259872,
+        "base_id": 314,
+        "power": 230000,
+        "name": 314
+      },
+      {
+        "card_id": 737259864,
+        "base_id": 314,
+        "power": 230000,
+        "name": 314
+      },
+      {
+        "card_id": 737260065,
+        "base_id": 314,
+        "power": 230000,
+        "name": 314
+      },
+      {
+        "card_id": 737260216,
+        "base_id": 314,
+        "power": 230000,
+        "name": 314
+      },
+      {
+        "card_id": 737260092,
+        "base_id": 314,
+        "power": 230000,
+        "name": 314
+      },
+      {
+        "card_id": 737260188,
+        "base_id": 314,
+        "power": 230000,
+        "name": 314
+      },
+      {
+        "card_id": 737268218,
+        "base_id": 314,
+        "power": 230000,
+        "name": 314
+      },
+      {
+        "card_id": 737260130,
+        "base_id": 314,
+        "power": 230000,
+        "name": 314
+      }
+    ],
+    "222321": [
+      {
+        "card_id": 433558018,
+        "base_id": 424,
+        "power": 222321,
+        "name": 424
+      }
+    ],
+    "20046": [
+      {
+        "card_id": 534362797,
+        "base_id": 105,
+        "power": 20046,
+        "name": 105
+      }
+    ],
+    "2267": [
+      {
+        "card_id": 737471139,
+        "base_id": 146,
+        "power": 2267,
+        "name": 146
+      }
+    ],
+    "2194": [
+      {
+        "card_id": 737471140,
+        "base_id": 174,
+        "power": 2194,
+        "name": 174
+      }
+    ],
+    "1925": [
+      {
+        "card_id": 737471141,
+        "base_id": 216,
+        "power": 1925,
+        "name": 216
+      }
+    ],
+    "1916": [
+      {
+        "card_id": 737471138,
+        "base_id": 237,
+        "power": 1916,
+        "name": 237
+      }
+    ],
+    "84": [
+      {
+        "card_id": 739444243,
+        "base_id": 108,
+        "power": 84,
+        "name": 108
+      }
+    ],
+    "83": [
+      {
+        "card_id": 739444246,
+        "base_id": 185,
+        "power": 83,
+        "name": 185
+      }
+    ],
+    "75": [
+      {
+        "card_id": 739444250,
+        "base_id": 276,
+        "power": 75,
+        "name": 276
+      }
+    ],
+    "70": [
+      {
+        "card_id": 739444242,
+        "base_id": 164,
+        "power": 70,
+        "name": 164
+      }
+    ],
+    "69": [
+      {
+        "card_id": 739444248,
+        "base_id": 283,
+        "power": 69,
+        "name": 283
+      }
+    ],
+    "66": [
+      {
+        "card_id": 739444251,
+        "base_id": 206,
+        "power": 66,
+        "name": 206
+      }
+    ],
+    "63": [
+      {
+        "card_id": 739444249,
+        "base_id": 136,
+        "power": 63,
+        "name": 136
+      },
+      {
+        "card_id": 739444244,
+        "base_id": 297,
+        "power": 63,
+        "name": 297
+      }
+    ],
+    "58": [
+      {
+        "card_id": 739444247,
+        "base_id": 234,
+        "power": 58,
+        "name": 234
+      }
+    ],
+    "55": [
+      {
+        "card_id": 739444245,
+        "base_id": 227,
+        "power": 55,
+        "name": 227
+      }
+    ],
+    "27": [
+      {
+        "card_id": 739444238,
+        "base_id": 184,
+        "power": 27,
+        "name": 184
+      }
+    ],
+    "24": [
+      {
+        "card_id": 739444233,
+        "base_id": 149,
+        "power": 24,
+        "name": 149
+      }
+    ],
+    "23": [
+      {
+        "card_id": 739444227,
+        "base_id": 191,
+        "power": 23,
+        "name": 191
+      },
+      {
+        "card_id": 739444239,
+        "base_id": 254,
+        "power": 23,
+        "name": 254
+      },
+      {
+        "card_id": 739444236,
+        "base_id": 275,
+        "power": 23,
+        "name": 275
+      }
+    ]
+  },
+  {
+    "id": 534362797,
+    "last_used_at": 0,
+    "power": 20046,
+    "base_card_id": 105,
+    "player_id": 6335329
+  },
+  {
+    "id": 739444243,
+    "last_used_at": 0,
+    "power": 84,
+    "base_card_id": 108,
+    "player_id": 6335329
+  },
+  {
+    "id": 739444249,
+    "last_used_at": 0,
+    "power": 63,
+    "base_card_id": 136,
+    "player_id": 6335329
+  },
+  {
+    "id": 737471139,
+    "last_used_at": 0,
+    "power": 2267,
+    "base_card_id": 146,
+    "player_id": 6335329
+  },
+  {
+    "id": 739444233,
+    "last_used_at": 0,
+    "power": 24,
+    "base_card_id": 149,
+    "player_id": 6335329
+  },
+  {
+    "id": 739444242,
+    "last_used_at": 0,
+    "power": 70,
+    "base_card_id": 164,
+    "player_id": 6335329
+  },
+  {
+    "id": 737471140,
+    "last_used_at": 0,
+    "power": 2194,
+    "base_card_id": 174,
+    "player_id": 6335329
+  },
+  {
+    "id": 739444238,
+    "last_used_at": 0,
+    "power": 27,
+    "base_card_id": 184,
+    "player_id": 6335329
+  },
+  {
+    "id": 739444246,
+    "last_used_at": 0,
+    "power": 83,
+    "base_card_id": 185,
+    "player_id": 6335329
+  },
+  {
+    "id": 739444227,
+    "last_used_at": 0,
+    "power": 23,
+    "base_card_id": 191,
+    "player_id": 6335329
+  },
+  {
+    "id": 739444251,
+    "last_used_at": 0,
+    "power": 66,
+    "base_card_id": 206,
+    "player_id": 6335329
+  },
+  {
+    "id": 737471141,
+    "last_used_at": 0,
+    "power": 1925,
+    "base_card_id": 216,
+    "player_id": 6335329
+  },
+  {
+    "id": 739444245,
+    "last_used_at": 0,
+    "power": 55,
+    "base_card_id": 227,
+    "player_id": 6335329
+  },
+  {
+    "id": 739444247,
+    "last_used_at": 0,
+    "power": 58,
+    "base_card_id": 234,
+    "player_id": 6335329
+  },
+  {
+    "id": 737471138,
+    "last_used_at": 0,
+    "power": 1916,
+    "base_card_id": 237,
+    "player_id": 6335329
+  },
+  {
+    "id": 739444239,
+    "last_used_at": 0,
+    "power": 23,
+    "base_card_id": 254,
+    "player_id": 6335329
+  },
+  {
+    "id": 739444236,
+    "last_used_at": 0,
+    "power": 23,
+    "base_card_id": 275,
+    "player_id": 6335329
+  },
+  {
+    "id": 739444250,
+    "last_used_at": 0,
+    "power": 75,
+    "base_card_id": 276,
+    "player_id": 6335329
+  },
+  {
+    "id": 739444248,
+    "last_used_at": 0,
+    "power": 69,
+    "base_card_id": 283,
+    "player_id": 6335329
+  },
+  {
+    "id": 739444244,
+    "last_used_at": 0,
+    "power": 63,
+    "base_card_id": 297,
+    "player_id": 6335329
+  },
+  {
+    "id": 737260036,
+    "last_used_at": 0,
+    "power": 250000,
+    "base_card_id": 310,
+    "player_id": 6335329
+  },
+  {
+    "id": 737268200,
+    "last_used_at": 0,
+    "power": 250000,
+    "base_card_id": 310,
+    "player_id": 6335329
+  },
+  {
+    "id": 737268189,
+    "last_used_at": 0,
+    "power": 250000,
+    "base_card_id": 310,
+    "player_id": 6335329
+  },
+  {
+    "id": 737259984,
+    "last_used_at": 0,
+    "power": 810000,
+    "base_card_id": 311,
+    "player_id": 6335329
+  },
+  {
+    "id": 737260162,
+    "last_used_at": 0,
+    "power": 235000,
+    "base_card_id": 312,
+    "player_id": 6335329
+  },
+  {
+    "id": 737259879,
+    "last_used_at": 0,
+    "power": 235000,
+    "base_card_id": 312,
+    "player_id": 6335329
+  },
+  {
+    "id": 737259933,
+    "last_used_at": 0,
+    "power": 235000,
+    "base_card_id": 312,
+    "player_id": 6335329
+  },
+  {
+    "id": 737259942,
+    "last_used_at": 0,
+    "power": 235000,
+    "base_card_id": 312,
+    "player_id": 6335329
+  },
+  {
+    "id": 737260055,
+    "last_used_at": 0,
+    "power": 235000,
+    "base_card_id": 312,
+    "player_id": 6335329
+  },
+  {
+    "id": 737260072,
+    "last_used_at": 0,
+    "power": 235000,
+    "base_card_id": 312,
+    "player_id": 6335329
+  },
+  {
+    "id": 737260110,
+    "last_used_at": 0,
+    "power": 230000,
+    "base_card_id": 314,
+    "player_id": 6335329
+  },
+  {
+    "id": 737259872,
+    "last_used_at": 0,
+    "power": 230000,
+    "base_card_id": 314,
+    "player_id": 6335329
+  },
+  {
+    "id": 737259864,
+    "last_used_at": 0,
+    "power": 230000,
+    "base_card_id": 314,
+    "player_id": 6335329
+  },
+  {
+    "id": 737260065,
+    "last_used_at": 0,
+    "power": 230000,
+    "base_card_id": 314,
+    "player_id": 6335329
+  },
+  {
+    "id": 737260216,
+    "last_used_at": 0,
+    "power": 230000,
+    "base_card_id": 314,
+    "player_id": 6335329
+  },
+  {
+    "id": 737260092,
+    "last_used_at": 0,
+    "power": 230000,
+    "base_card_id": 314,
+    "player_id": 6335329
+  },
+  {
+    "id": 737260188,
+    "last_used_at": 0,
+    "power": 230000,
+    "base_card_id": 314,
+    "player_id": 6335329
+  },
+  {
+    "id": 737268218,
+    "last_used_at": 0,
+    "power": 230000,
+    "base_card_id": 314,
+    "player_id": 6335329
+  },
+  {
+    "id": 737260130,
+    "last_used_at": 0,
+    "power": 230000,
+    "base_card_id": 314,
+    "player_id": 6335329
+  },
+  {
+    "id": 737260083,
+    "last_used_at": 0,
+    "power": 240000,
+    "base_card_id": 316,
+    "player_id": 6335329
+  },
+  {
+    "id": 737260103,
+    "last_used_at": 0,
+    "power": 240000,
+    "base_card_id": 316,
+    "player_id": 6335329
+  },
+  {
+    "id": 737259966,
+    "last_used_at": 0,
+    "power": 240000,
+    "base_card_id": 316,
+    "player_id": 6335329
+  },
+  {
+    "id": 737259954,
+    "last_used_at": 0,
+    "power": 240000,
+    "base_card_id": 316,
+    "player_id": 6335329
+  },
+  {
+    "id": 737259852,
+    "last_used_at": 0,
+    "power": 255000,
+    "base_card_id": 318,
+    "player_id": 6335329
+  },
+  {
+    "id": 737259922,
+    "last_used_at": 0,
+    "power": 255000,
+    "base_card_id": 318,
+    "player_id": 6335329
+  },
+  {
+    "id": 737268243,
+    "last_used_at": 0,
+    "power": 255000,
+    "base_card_id": 318,
+    "player_id": 6335329
+  },
+  {
+    "id": 737268264,
+    "last_used_at": 0,
+    "power": 255000,
+    "base_card_id": 318,
+    "player_id": 6335329
+  },
+  {
+    "id": 737268234,
+    "last_used_at": 0,
+    "power": 255000,
+    "base_card_id": 318,
+    "player_id": 6335329
+  },
+  {
+    "id": 737260042,
+    "last_used_at": 0,
+    "power": 255000,
+    "base_card_id": 318,
+    "player_id": 6335329
+  },
+  {
+    "id": 737259970,
+    "last_used_at": 0,
+    "power": 255000,
+    "base_card_id": 318,
+    "player_id": 6335329
+  },
+  {
+    "id": 737259993,
+    "last_used_at": 0,
+    "power": 255000,
+    "base_card_id": 318,
+    "player_id": 6335329
+  },
+  {
+    "id": 526705619,
+    "last_used_at": 0,
+    "power": 13208123,
+    "base_card_id": 331,
+    "player_id": 6335329
+  },
+  {
+    "id": 529890237,
+    "last_used_at": 0,
+    "power": 8500000,
+    "base_card_id": 339,
+    "player_id": 6335329
+  },
+  {
+    "id": 433558018,
+    "last_used_at": 1775559946,
+    "power": 222321,
+    "base_card_id": 424,
+    "player_id": 6335329
+  },
+  {
+    "id": 432627196,
+    "last_used_at": 0,
+    "power": 262871,
+    "base_card_id": 724,
+    "player_id": 6335329
+  }
+]

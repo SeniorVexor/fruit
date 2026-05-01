@@ -2,68 +2,103 @@ import fs from 'fs/promises';
 import path from 'path';
 import crypto from 'crypto';
 
-const TOKEN_DIR = path.join(process.cwd(), 'config/auth/token');
-const TOKEN_FILE_PATH = path.join(TOKEN_DIR, 'tokens.json');
+const TOKENS_DIR = path.join(process.cwd(), 'config/auth/tokens');
 
-interface TokenEntry {
+export interface TokenData {
     token: string;
     userId: string;
     createdAt: string;
-}
-
-interface TokenFile {
-    full: TokenEntry[];
+    allowedPaths: string[];
 }
 
 export class TokenManager {
     private static async ensureDir(): Promise<void> {
-        await fs.mkdir(TOKEN_DIR, { recursive: true });
+        await fs.mkdir(TOKENS_DIR, { recursive: true });
     }
 
-    private static async readTokens(): Promise<TokenFile> {
+    private static async readTokenFile(token: string): Promise<TokenData | null> {
         try {
             await this.ensureDir();
-            const data = await fs.readFile(TOKEN_FILE_PATH, 'utf-8');
-            return JSON.parse(data);
+            const filePath = path.join(TOKENS_DIR, `${token}.json`);
+            const content = await fs.readFile(filePath, 'utf-8');
+            return JSON.parse(content);
         } catch {
-            const initial: TokenFile = { full: [] };
-            await this.writeTokens(initial);
-            return initial;
+            return null;
         }
     }
 
-    private static async writeTokens(tokens: TokenFile): Promise<void> {
+    private static async writeTokenFile(token: string, data: TokenData): Promise<void> {
         await this.ensureDir();
-        await fs.writeFile(TOKEN_FILE_PATH, JSON.stringify(tokens, null, 2));
+        const filePath = path.join(TOKENS_DIR, `${token}.json`);
+        await fs.writeFile(filePath, JSON.stringify(data, null, 2));
     }
 
-    static async isValidToken(token: string): Promise<{ valid: boolean; userId?: string }> {
-        const tokens = await this.readTokens();
-        const entry = tokens.full.find(t => t.token === token);
-        return entry ? { valid: true, userId: entry.userId } : { valid: false };
+    // بررسی اعتبار توکن (وجود فایل و انطباق token داخل فایل با نام فایل)
+    static async isValidToken(token: string): Promise<{ valid: boolean; userId?: string; allowedPaths?: string[] }> {
+        const data = await this.readTokenFile(token);
+        if (data && data.token === token) {
+            return { valid: true, userId: data.userId, allowedPaths: data.allowedPaths };
+        }
+        return { valid: false };
     }
 
-    static async addToken(token: string, userId: string | number | BigInt): Promise<void> {
-        const tokens = await this.readTokens();
-        const userIdStr = userId.toString();
+    // دریافت مجوزهای توکن
+    static async getAllowedPaths(token: string): Promise<string[] | null> {
+        const data = await this.readTokenFile(token);
+        return data?.allowedPaths ?? null;
+    }
 
-        if (!tokens.full.find(t => t.token === token)) {
-            tokens.full.push({
-                token,
-                userId: userIdStr,
-                createdAt: new Date().toISOString()
-            });
-            await this.writeTokens(tokens);
+    // ساخت توکن جدید و ذخیره در فایل جداگانه
+    static async createToken(userId: string, allowedPaths: string[] = []): Promise<string> {
+        const token = crypto.randomUUID();
+        const tokenData: TokenData = {
+            token,
+            userId,
+            createdAt: new Date().toISOString(),
+            allowedPaths,
+        };
+        await this.writeTokenFile(token, tokenData);
+        return token;
+    }
+
+    // به‌روزرسانی مجوزهای توکن
+    static async updateAllowedPaths(token: string, allowedPaths: string[]): Promise<boolean> {
+        const data = await this.readTokenFile(token);
+        if (!data) return false;
+        data.allowedPaths = allowedPaths;
+        await this.writeTokenFile(token, data);
+        return true;
+    }
+
+    // حذف توکن
+    static async removeToken(token: string): Promise<void> {
+        try {
+            const filePath = path.join(TOKENS_DIR, `${token}.json`);
+            await fs.unlink(filePath);
+        } catch (error) {
+            console.error(`Error deleting token ${token}:`, error);
         }
     }
 
-    static async removeToken(token: string): Promise<void> {
-        const tokens = await this.readTokens();
-        tokens.full = tokens.full.filter(t => t.token !== token);
-        await this.writeTokens(tokens);
-    }
-
-    static generateToken(): string {
-        return crypto.randomUUID();
+    // (اختیاری) تبدیل از فرمت قدیمی tokens.json به فایل‌های جدید
+    static async migrateFromOldFormat(oldFilePath: string): Promise<void> {
+        try {
+            const content = await fs.readFile(oldFilePath, 'utf-8');
+            const { full } = JSON.parse(content);
+            for (const entry of full) {
+                const existing = await this.readTokenFile(entry.token);
+                if (!existing) {
+                    await this.writeTokenFile(entry.token, {
+                        token: entry.token,
+                        userId: entry.userId,
+                        createdAt: entry.createdAt,
+                        allowedPaths: [], // مقدار پیش‌فرض
+                    });
+                }
+            }
+            console.log('Migration completed successfully');
+        } catch (error) {
+            console.error('Migration failed:', error);
+        }
     }
 }

@@ -1,0 +1,6 @@
+{
+  "token": "2aaf5dba-f569-4fdb-8b65-030f29218c58",
+  "userId": "123456789",
+  "createdAt": "2026-04-29T22:17:36.822Z",
+  "allowedPaths": ["miner","cardTransfer"]
+}

@@ -1,0 +1,14 @@
+[20:03:01] [1mConnecting Seller...[0m
+[20:03:04] SELLER connected: Lv.169 | Gold: 295758
+[20:03:04] [1mConnecting Buyer...[0m
+[20:03:06] BUYER connected: Lv.63 | Gold: 1467762236
+[20:03:11] Found 3 cards with base_id 100
+[20:03:11] Disconnected
+[20:03:11] Disconnected
+[00:16:55] [1mConnecting Seller...[0m
+[00:17:06] SELLER connected: Lv.1923 | Gold: 22905151133
+[00:17:06] [1mConnecting Buyer...[0m
+[00:17:10] BUYER connected: Lv.111 | Gold: 3391194
+[00:17:11] Found 1 cards with base_id 107
+[00:17:11] Disconnected
+[00:17:11] Disconnected

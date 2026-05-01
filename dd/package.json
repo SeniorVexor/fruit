@@ -1,0 +1,44 @@
+{
+  "name": "fruit-bot",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "prisma generate",
+    "vercel-build": "prisma generate && next build",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prisma:generate": "prisma generate",
+    "prisma:push": "prisma db push",
+    "prisma:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@iconify/react": "^6.0.2",
+    "@supabase/supabase-js": "^2.89.0",
+    "@tailwindcss/postcss": "^4.1.18",
+    "next": "^16.2.3",
+    "iconify": "^1.4.0",
+    "lucide-react": "^0.562.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/cacheable-request": "^8.3.6",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "daisyui": "^5.5.14",
+    "prisma": "^5.10.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@prisma/client",
+      "@prisma/engines",
+      "prisma",
+      "sharp"
+    ]
+  }
+}
